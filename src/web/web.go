@@ -169,6 +169,10 @@ func init() {
 
 	flag.Parse()
 
+	port := os.Getenv("PORT") // For Heroku, port is supplied as environ ??
+	if port != "" {
+		conf.Port = port
+	}
 	// compile templates
 	layout_tmpl := conf.RootPath + "/templates/layout.html"
 	index_tmpl := conf.RootPath + "/templates/index.html"
