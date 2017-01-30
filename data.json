@@ -1,0 +1,79 @@
+{
+    "main_image":"https://c3.staticflickr.com/1/453/31161029634_403b3cc3d0_b.jpg",
+    "categories": [
+	{
+	    "name":"Work",
+	    "projects":[
+		{
+		    "type":"internal",
+		    "name":"Wires and Pigeons",
+		    "link":"wires_and_pigeons",
+		    "main_image":"https://c7.staticflickr.com/1/566/31161006214_51884aae5d_b.jpg",
+		    "description":"After moving to Delhi, where my parents chose to settle, I began exploring the city. I was not quiet sure what I was looking for. Maybe, a sense of belonging? Which was always lacking but never missed. Very soon, I found myself walking through the crowded by-lanes and underpasses canopied by wires of all sorts. Pigeons are everywhere, witness to the consistent decay the city presents. Here, the new and the old coincide into a constant rush. The city reflects back on to me, my own confusions, which has formed a basis of my relation with it.",
+		    "images":[
+			"https://c7.staticflickr.com/1/746/31160980974_0e84becbde_z.jpg",
+			"https://c3.staticflickr.com/1/275/31160988594_8eac0e295e_b.jpg",
+			"https://c3.staticflickr.com/1/435/31160994754_500b1e61e6_b.jpg",
+			"https://c7.staticflickr.com/1/422/31161000014_d86b1a2ed7_b.jpg",
+			"https://c3.staticflickr.com/2/1602/24655495842_8b4433c5be_b.jpg",
+			"https://c3.staticflickr.com/8/7368/27344970994_a9ab7e2a08_b.jpg",
+			"https://c7.staticflickr.com/1/566/31161006214_51884aae5d_b.jpg",
+			"https://c7.staticflickr.com/1/518/31161013454_748a515e0e_b.jpg",
+			"https://c1.staticflickr.com/2/1572/25426247632_2f1e1ccaf9_b.jpg",
+			"https://c7.staticflickr.com/1/669/31161018894_154ce46b3f_b.jpg",
+			"https://c8.staticflickr.com/1/496/31884581071_89fa14a3c4_b.jpg",
+			"https://c8.staticflickr.com/2/1642/25645399023_d61b3b7b49_b.jpg",
+			"https://c4.staticflickr.com/6/5744/23823391675_71aa34cd80_b.jpg",
+			"https://c6.staticflickr.com/8/7038/27259290853_ed53379b2b_b.jpg",
+			"https://c5.staticflickr.com/1/394/31161026524_b90d8ea584_b.jpg",
+			"https://c3.staticflickr.com/1/453/31161029634_403b3cc3d0_b.jpg"
+		    ]
+		},
+		{
+		    "type":"internal",
+		    "name":"IT City",
+		    "link":"it_city",
+		    "main_image":"https://c1.staticflickr.com/1/333/18750695296_a643c33092_b.jpg",
+		    "description":"A dream almost come true.",
+		    "images":[
+			"https://c1.staticflickr.com/1/336/18589226888_da23073eae_b.jpg",
+			"https://c4.staticflickr.com/1/381/18590871259_70f59400ce_b.jpg",
+			"https://c7.staticflickr.com/1/549/18589306790_71b6c451d3_b.jpg",
+			"https://c6.staticflickr.com/1/491/18590887429_d126cbc6ed_b.jpg",
+			"https://c5.staticflickr.com/1/448/18750764036_81ff9392dc_b.jpg",
+			"https://c6.staticflickr.com/1/275/18779624901_95026bfab6_b.jpg",
+			"https://c5.staticflickr.com/1/464/18589423100_7408f8ab48_b.jpg",
+			"https://c2.staticflickr.com/1/302/18777175945_e45e6fe375_b.jpg",
+			"https://c3.staticflickr.com/1/379/18589388138_6df7eb27c8_b.jpg",
+			"https://c7.staticflickr.com/1/303/18154373974_f1765df4fc_b.jpg",
+			"https://c4.staticflickr.com/1/260/18779728211_9b2beb4178_b.jpg",
+			"https://c4.staticflickr.com/1/373/18779757651_e865ed8c56_b.jpg",
+			"https://c7.staticflickr.com/1/287/18772304622_2c8230a56f_b.jpg",
+			"https://c6.staticflickr.com/1/373/18156622493_3e8320fa44_b.jpg",
+			"https://c8.staticflickr.com/1/275/18779482511_771c2a52d3_b.jpg",
+			"https://c3.staticflickr.com/1/299/18589227610_49337ac89a_b.jpg"
+		    ]
+		}
+	    ]
+	},
+	{
+	    "name":"Cinema",
+	    "projects":[
+		{
+		    "type":"external",
+		    "name":"Pratihinsa",
+		    "link":"pratihinsa",
+		    "main_image":"http://www.petprojectfilms.com/images/ppf/projects/pratihinsa/15_thumb.jpg",
+		    "external_link":"http://www.petprojectfilms.com/pratihinsa.html"
+		},
+		{
+		    "type":"external",
+		    "name":"Subah Ke Pehle",
+		    "link":"subah_ke_pehle",
+		    "main_image":"http://www.petprojectfilms.com/images/ppf/projects/skp/film_stills/047.jpg",
+		    "external_link":"http://www.petprojectfilms.com/subah_ke_pehle.html"
+		}
+	    ]
+	}
+    ]
+}
