@@ -1,1 +1,1 @@
-web: go run src/web/web.go
+web: bin/web
