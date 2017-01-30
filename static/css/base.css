@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster|Dancing+Script|Gentium+Basic|Roboto+Mono');
+
+body {
+    /*   font-family : "Lobster", cursive; */
+    font-family: 'Roboto Mono', monospace;
+    margin: 2px;
+    font-size: 17px;
+}
+
+h1 {
+    font-family: 'Gentium Basic', serif;
+    font-weight: bold;
+    font-size: 209%
+}
+
+h2 {
+    font-size : 125%
+}
+
+a {
+    text-decoration: none;
+    color : #000000;
+}
+
+a:hover {
+    color: #E56038;
+}
+
+header {
+    margin-bottom: 1.5em;
+}
+
+header a:hover {
+    color: #000000;
+}
+
+.main-container {
+    margin: 1.5em;
+}
+
+.navbar {
+    float: left;
+    display: inline-block;
+    margin-bottom: 4em;
+}
+
+.icon {
+    margin-top: 10px;
+    width: 34px;
+    float: left;
+    margin-bottom: 10px;
+    margin-right: 5px;
+}
+
+.navbar ul {
+    margin-bottom: 7px;
+}
+
+.step {
+    margin-left : 10px;
+}
+
+.hide {
+    display : none;
+}
+
+.main-image {
+    margin-left: 250px;
+    width: 680px;
+    position: absolute;
+    top: 3.5em;
+    text-align: justify;
+}
+
+.mobile-content {
+    display: none;
+}
+
+.content h3 {
+    font-weight: bold;
+    font-size: 110%;
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
+.content {
+    margin-left: 310px;
+    width: 500px;
+    position: absolute;
+    top: 3.5em;
+    text-align: justify;
+}
+
+.content p {
+    font-size: 95%;
+    text-indent: 2em;
+    line-height: 1.2em;
+}
+.content img {
+    width: 550px;
+}
+
+.mobile-icon {
+    display: none;
+}
+
+.general-content {
+    margin-left: 250px;
+    width: 680px;
+    position: absolute;
+    top: 3.5em;
+    text-align: justify;
+    text-indent: 2.5em;
+}
+
+.proj-content {
+    max-width: 800px;
+    margin: 0px auto;
+    
+    margin-left: 250px;
+    position: absolute;
+    top: -3.5em;
+    text-align: justify;
+}
+
+.proj-content img {
+    width: 100%;
+}
+
+.proj-content h3 {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+.proj-content p {
+    text-indent: 2.5em;
+    width: 85%;
+    margin: auto;
+}
+
+/* slick */
+    * {
+      box-sizing: border-box;
+    }
+
+    .slider {
+        width: 100%;
+        margin: 0px auto;
+    }
+
+    .slick-slide {
+      margin: 0px 20px;
+    }
+
+    .slick-slide img {
+	height: 508px;
+	width: auto;
+	margin: auto;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+        color: black;
+    }
+
+@media screen and (max-width:768px) {
+    .navbar {
+	display: none;
+	/* position: fixed; */
+	/* right: 0; */
+	/* top: 0; */
+	/* margin: 1.5em; */
+	/* padding: 5px; */
+	/* border-width: 1.5px; */
+	/* border-style: solid; */
+	/* text-align: center; */
+	float:none;
+    }
+
+    .navbar ul li {
+	display: none;
+    }
+
+    .mobile-icon {
+	position: fixed;
+	top: 0;
+	right: 0;
+	display: inline;
+	padding: 1.7em;
+    }
+
+    /* .navbar.responsive {position: relative;} */
+    /* .navbar.responsive li.icon { */
+    /*   position: absolute; */
+    /*   right: 0; */
+    /*   top: 0; */
+    /* } */
+
+    .navbar.responsive {
+	display: block;
+    }
+    
+    .navbar.responsive ul li {
+	display: inline;
+    }
+    
+    .navbar.responsive ul li a {
+	display: block;
+    }
+    
+    .main-image {
+	display: none;
+    }
+    
+    .mobile-content {
+	display: inline;
+	text-align: justify;
+	margin-left: 0px;
+	width: 100%;
+	position: relative;
+    }
+
+    .mobile-content h3 {
+	font-weight: bold;
+	font-size: 110%;
+	text-align: center;
+	margin-bottom: 1.5em;
+    }
+
+    .mobile-content p {
+	font-size: 95%;
+	text-indent: 2em;
+	line-height: 1.2em;
+    }
+
+    .mobile-content img {
+	display: block;
+	width: 100%;
+    }
+
+    .content {
+	display: inline;
+	margin-left: 0px;
+	width: 100%;
+	position: relative;
+	top: 0em;
+    }
+
+    .content img {
+	display: block;
+	width: 100%;
+    }
+
+    .proj-content {
+	width: 100%
+	margin: 0px;
+	position: static;
+	top: 0em;
+    }
+    
+    .general-content {
+	width: 100%;
+	margin: 0px;
+	position: static;
+	top: 0em;
+    }
+
+    .slick-slide img {
+	width: 100%;
+	height: auto;
+	margin: auto;
+    }
+}
+

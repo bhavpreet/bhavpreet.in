@@ -1,0 +1,27 @@
+{{ define "page_proj" }}
+{{ template "layout_head" . }}
+
+<div class="proj-content slider">
+  <div><img src="{{ .Proj.MainImage }}"></div>
+  <div>
+    <h3>{{ .Proj.Name }}</h3>
+    <p>{{ .Proj.Description }}</p>
+  </div>
+  {{ range $_, $p_img := .Proj.Images }}
+  <div><img src="{{ $p_img }}"></div>
+  {{ end }}
+</div>
+
+<script>
+    $(document).on('ready', function() {
+	$(".proj-content").slick({
+	});
+    })
+</script>
+
+{{ template "layout_tail" . }}
+{{ end }}
+
+
+{{ define "layout_head" }}{{ end }}
+{{ define "layout_tail" }}{{ end }}

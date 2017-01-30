@@ -1,0 +1,80 @@
+{{ define "layout_head" }}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Bhavpreet Singh</title>
+
+  <link href="/static/css/reset.css" rel="stylesheet" media="screen">
+
+  <link rel="stylesheet" media="screen" href="/static/css/base.css">
+
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+  <script src="/static/thirdparty/slick/slick/slick.js" type="text/javascript" charset="utf-8"></script>
+
+  <link rel="stylesheet" type="text/css" href="/static/thirdparty/slick/slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="/static/thirdparty/slick/slick/slick-theme.css">
+  <link rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/lipis/bootstrap-social/gh-pages/bootstrap-social.css" />
+</head>
+
+<div class="main-container">
+  <body>
+    <header id="header_">
+      <h1><a href="{{ "main" | url_for }}">BHAVPREET<br>SINGH</a></h1>
+    </header>
+    <div class="navbar" id="navbar_">
+      <ul>
+	{{ range $idx, $cat := .Info.Cat }}
+        <li><h2>{{ $cat.Name }}</h2></li>
+        <ul class="step">
+	  {{ range $_, $proj := $cat.Projects }}
+	  {{ if eq $proj.Type "internal" }}
+          <li><a href="{{ url_for $proj.Link }}">{{ $proj.Name }}</a></li>
+	  {{ else }}
+          <li><a href="{{ $proj.ExtLink }}" target="_blank">{{ $proj.Name }}</a></li>
+	  {{ end }}
+	  {{ end }}
+        </ul>
+	{{ end }}
+	
+        <li><h2><a href="{{ url_for `about` }}">About</a></h2></li>
+
+        <li><h2><a href="{{ url_for `contact` }}">Contact</a></h2></li>
+	
+	<li><a href="https://www.instagram.com/_bhav/" target="_blank"><img class="icon" src="https://5a5a57ff32a328601212-ee0df397c56b146e91fe14be42fa361d.ssl.cf1.rackcdn.com/icon/instagram_logos_app_icon/YyepHGHDvkl1wFkUHw8Y/Instagram-v051916_200.png"/></a>
+	  <a href="http://www.flickr.com/photos/bhav/" target="_blank"><img class="icon" src="https://s.yimg.com/pw/images/goodies/white-large-chiclet.png"></a>
+	  <a href="https://www.facebook.com/bhavpreet.singh" target="_blank"><img class="icon" src="https://en.facebookbrand.com/wp-content/uploads/2016/05/FB-fLogo-Blue-broadcast-2.png" /></a>
+	</li>
+      </ul>
+    </div>
+    <div class="mobile-icon"><a href="javascript:void(0);" onclick="makeResponsive()">☰</a></div>
+    
+{{ end }}
+
+{{ define "layout_tail" }}
+  </body>
+</div>
+</html>
+
+<script>
+function makeResponsive() {
+    var x = document.getElementById("navbar_");
+    if (x.className === "navbar") {
+        x.className += " responsive";
+    } else {
+        x.className = "navbar";
+    }
+
+    var x = document.getElementById("header_");
+    if (x.className === "") {
+        x.className += "hide";
+    } else {
+        x.className = "";
+    }
+}
+</script>
+
+{{ end }}
