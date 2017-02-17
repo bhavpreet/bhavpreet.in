@@ -146,7 +146,8 @@ header a:hover {
 
     .slider {
         width: 100%;
-        margin: 0px auto;
+        margin-left: 233px;
+        /* margin: 0px auto; */
     }
 
     .slick-slide {
@@ -164,7 +165,7 @@ header a:hover {
         color: black;
     }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:910px) {
     .navbar {
 	display: none;
 	/* position: fixed; */
@@ -264,6 +265,11 @@ header a:hover {
 	margin: 0px;
 	position: static;
 	top: 0em;
+    }
+
+    .slider {
+        width: 100%;
+        margin: 0px auto;
     }
 
     .slick-slide img {
