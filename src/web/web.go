@@ -79,7 +79,7 @@ func ProjHandler(w http.ResponseWriter, r *http.Request) {
 			for _, p := range c.Projects {
 				if strings.ToLower(p.Link) == strings.ToLower(_proj_link) {
 					proj = &p
-					// fmt.Println("XXXXXXXXX Found project", proj.Name)
+					// fmt.Println("Found project", proj.Name)
 					break
 				}
 			}
