@@ -9,18 +9,16 @@
 		    "name":"Wires and Pigeons",
 		    "link":"wires_and_pigeons",
 		    "main_image":"https://c7.staticflickr.com/1/566/31161006214_51884aae5d_b.jpg",
-		    "description":"After moving to Delhi, where my parents chose to settle, I began exploring the city with new eyes. I was not quiet sure what I was looking for. Maybe, a sense of belonging? Which was always lacking but never missed. I found myself walking through the crowded by-lanes and underpasses canopied by wires of all sorts. Pigeons are everywhere, witness to the consistent decay the city presents. Here, new and old collide into a constant rush. The city reflects back on to me, my own confusions, which has formed a basis of my relation with it.",
+		    "description":"After moving to Delhi, where my parents chose to settle, I began exploring the city. I was not quiet sure what I was looking for. Maybe, a sense of belonging? Which was always lacking but never missed. I got found of walking through the crowded by-lanes and underpasses canopied by wires of all sorts. Pigeons are everywhere, witness to the consistent decay the city presents. New and old collide into a constant rush. The city reflects back on to me, my own confusions, which has formed a basis of my relation with it.",
 		    "images":[
 			    "https://c7.staticflickr.com/1/746/31160980974_0e84becbde_z.jpg",
                 "https://c1.staticflickr.com/1/275/31160988594_e2c611c0b5_b.jpg",
                 "https://c1.staticflickr.com/1/435/31160994754_a8a40a14b8_b.jpg",
                 "https://c1.staticflickr.com/1/422/31161000014_91ac570476_b.jpg",
-                "https://c1.staticflickr.com/2/1602/24655495842_8b4433c5be_b.jpg",
-                "https://c1.staticflickr.com/8/7368/27344970994_a9ab7e2a08_b.jpg",
                 "https://c1.staticflickr.com/1/518/31161013454_748a515e0e_b.jpg",
+                "https://c1.staticflickr.com/2/1602/24655495842_8b4433c5be_b.jpg",
                 "https://c1.staticflickr.com/6/5744/23823391675_71aa34cd80_b.jpg",
                 "https://c1.staticflickr.com/8/7038/27259290853_173ab9ef05_b.jpg",
-                "https://c1.staticflickr.com/1/394/31161026524_b90d8ea584_b.jpg",
                 "https://c1.staticflickr.com/1/453/31161029634_403b3cc3d0_b.jpg"
 		    ]
 		},
@@ -54,10 +52,10 @@
 	    "projects":[
 		{
 		    "type":"external",
-		    "name":"Pratihinsa",
-		    "link":"pratihinsa",
-		    "main_image":"http://www.petprojectfilms.com/images/ppf/projects/pratihinsa/15_thumb.jpg",
-		    "external_link":"http://www.petprojectfilms.com/pratihinsa.html"
+		    "name":"Pyre",
+		    "link":"pyre",
+		    "main_image":"http://www.petprojectfilms.com/images/ppf/projects/pyre/film_stills/23.jpg",
+		    "external_link":"http://www.petprojectfilms.com/pyre.html"
 		},
 		{
 		    "type":"external",
@@ -65,6 +63,13 @@
 		    "link":"subah_ke_pehle",
 		    "main_image":"http://www.petprojectfilms.com/images/ppf/projects/skp/film_stills/047.jpg",
 		    "external_link":"http://www.petprojectfilms.com/subah_ke_pehle.html"
+		},
+		{
+		    "type":"external",
+		    "name":"Pratihinsa",
+		    "link":"pratihinsa",
+		    "main_image":"http://www.petprojectfilms.com/images/ppf/projects/pratihinsa/15_thumb.jpg",
+		    "external_link":"http://www.petprojectfilms.com/pratihinsa.html"
 		}
 	    ]
 	}
