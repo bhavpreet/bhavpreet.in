@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www.bhavpreet.in)",
+      "Bash(wget:*)",
+      "Bash(git init:*)",
+      "Bash(git checkout:*)"
+    ]
+  }
+}

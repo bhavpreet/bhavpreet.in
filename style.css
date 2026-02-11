@@ -1,0 +1,305 @@
+/* Japanese Zen Minimal Aesthetic */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-bg: #fafafa;
+    --color-text: #2a2a2a;
+    --color-accent: #1a1a1a;
+    --spacing-unit: 1.5rem;
+    --max-width: 960px;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    color: var(--color-text);
+    background-color: var(--color-bg);
+    font-weight: 300;
+}
+
+/* Typography */
+h1, h2, h3 {
+    font-weight: 300;
+    letter-spacing: 0.02em;
+}
+
+h1 {
+    font-size: 1rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 0.875rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: calc(var(--spacing-unit) * 2);
+}
+
+/* Layout */
+header {
+    padding: calc(var(--spacing-unit) * 3) var(--spacing-unit);
+    text-align: center;
+}
+
+main {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: calc(var(--spacing-unit) * 4) var(--spacing-unit);
+    min-height: 60vh;
+}
+
+footer {
+    padding: calc(var(--spacing-unit) * 3) var(--spacing-unit);
+    text-align: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    margin-top: calc(var(--spacing-unit) * 6);
+}
+
+/* Navigation */
+.main-nav {
+    text-align: center;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--spacing-unit) * 1.5);
+    align-items: center;
+}
+
+.main-nav li {
+    opacity: 0;
+    animation: fadeIn 0.6s ease-out forwards;
+}
+
+.main-nav li:nth-child(1) { animation-delay: 0.1s; }
+.main-nav li:nth-child(2) { animation-delay: 0.2s; }
+.main-nav li:nth-child(3) { animation-delay: 0.3s; }
+
+.main-nav a {
+    color: var(--color-text);
+    text-decoration: none;
+    font-size: 1.25rem;
+    letter-spacing: 0.05em;
+    transition: opacity 0.3s ease;
+    display: inline-block;
+    padding: 0.5rem 0;
+}
+
+.main-nav a:hover {
+    opacity: 0.5;
+}
+
+/* Social Links */
+.social-links {
+    display: flex;
+    gap: calc(var(--spacing-unit) * 2);
+    justify-content: center;
+}
+
+.social-links a {
+    color: var(--color-text);
+    text-decoration: none;
+    font-size: 0.875rem;
+    letter-spacing: 0.05em;
+    transition: opacity 0.3s ease;
+}
+
+.social-links a:hover {
+    opacity: 0.5;
+}
+
+/* Content Pages */
+.page-header {
+    text-align: center;
+    margin-bottom: calc(var(--spacing-unit) * 4);
+}
+
+.intro-text {
+    max-width: 600px;
+    margin: 0 auto calc(var(--spacing-unit) * 4);
+    text-align: center;
+    font-size: 0.9375rem;
+    line-height: 2;
+    color: rgba(42, 42, 42, 0.7);
+}
+
+/* Project Grid */
+.project-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: calc(var(--spacing-unit) * 4);
+    margin-top: calc(var(--spacing-unit) * 3);
+}
+
+.project-item {
+    text-align: center;
+}
+
+.project-item a {
+    color: var(--color-text);
+    text-decoration: none;
+    display: inline-block;
+    transition: opacity 0.3s ease;
+}
+
+.project-item a:hover {
+    opacity: 0.5;
+}
+
+.project-title {
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    margin-top: var(--spacing-unit);
+}
+
+/* Project Detail Page */
+.project-detail {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.project-description {
+    margin: calc(var(--spacing-unit) * 3) 0;
+    text-align: center;
+    line-height: 2;
+    color: rgba(42, 42, 42, 0.7);
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+    overflow: hidden;
+    margin: calc(var(--spacing-unit) * 3) 0;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Photo Grid */
+.photo-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: calc(var(--spacing-unit) * 3);
+    margin-top: calc(var(--spacing-unit) * 3);
+}
+
+.photo-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: opacity 0.3s ease;
+}
+
+.photo-item img:hover {
+    opacity: 0.9;
+}
+
+/* About Page */
+.about-content {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.profile-image {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    margin: 0 auto calc(var(--spacing-unit) * 3);
+    overflow: hidden;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bio {
+    line-height: 2;
+    margin-bottom: calc(var(--spacing-unit) * 3);
+    color: rgba(42, 42, 42, 0.8);
+}
+
+/* Back Link */
+.back-link {
+    text-align: center;
+    margin-top: calc(var(--spacing-unit) * 4);
+}
+
+.back-link a {
+    color: var(--color-text);
+    text-decoration: none;
+    font-size: 0.875rem;
+    letter-spacing: 0.05em;
+    transition: opacity 0.3s ease;
+}
+
+.back-link a:hover {
+    opacity: 0.5;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+    :root {
+        --spacing-unit: 2rem;
+    }
+
+    h1 {
+        font-size: 1.125rem;
+    }
+
+    .main-nav ul {
+        flex-direction: row;
+        gap: calc(var(--spacing-unit) * 3);
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+        gap: calc(var(--spacing-unit) * 6);
+    }
+
+    .photo-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: calc(var(--spacing-unit) * 2);
+    }
+}
+
+@media (min-width: 1024px) {
+    header {
+        padding: calc(var(--spacing-unit) * 4) var(--spacing-unit);
+    }
+
+    main {
+        padding: calc(var(--spacing-unit) * 6) var(--spacing-unit);
+    }
+}
