@@ -23,6 +23,10 @@ body {
     background: var(--bg);
     font-weight: 300;
     -webkit-font-smoothing: antialiased;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-height: 100svh;
 }
 
 a {
@@ -62,32 +66,51 @@ h2 {
 /* ─── Layout ─── */
 
 header {
-    padding: calc(var(--sp) * 2.5) var(--sp);
+    padding: calc(var(--sp) * 1.75) var(--sp) 0;
     text-align: center;
 }
 
 main {
+    flex: 1;
+    width: 100%;
     max-width: var(--max-w);
     margin: 0 auto;
-    padding: calc(var(--sp) * 2) var(--sp);
-    min-height: 60vh;
+    padding: calc(var(--sp) * 1.25) var(--sp) calc(var(--sp) * 2.5);
 }
 
 footer {
-    padding: calc(var(--sp) * 2.5) var(--sp);
+    padding: calc(var(--sp) * 1.1) var(--sp);
     text-align: center;
     border-top: 1px solid var(--rule);
-    margin-top: calc(var(--sp) * 4);
+    margin-top: auto;
 }
 
 /* ─── Homepage — centered menu ─── */
 
 .home-main {
     display: flex;
-    align-items: center;
     justify-content: center;
-    min-height: 70vh;
-    padding: var(--sp);
+    padding: calc(var(--sp) * 1.75) var(--sp) calc(var(--sp) * 2.5);
+}
+
+.home-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: calc(var(--sp) * 2.5);
+    width: 100%;
+}
+
+.home-hero {
+    width: 100%;
+    max-width: 300px;
+    opacity: 0;
+    animation: fadeIn 0.8s ease forwards;
+}
+
+.home-hero img {
+    width: 100%;
+    height: auto;
 }
 
 .main-nav ul {
@@ -343,6 +366,14 @@ footer {
         font-size: 1.25rem;
     }
 
+    .home-inner {
+        gap: calc(var(--sp) * 3);
+    }
+
+    .home-hero {
+        max-width: 460px;
+    }
+
     .photo-grid {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -354,11 +385,44 @@ footer {
     :root { --sp: 2rem; }
 
     header {
-        padding: calc(var(--sp) * 3) var(--sp);
+        padding: calc(var(--sp) * 1.5) var(--sp) 0;
     }
 
     main {
-        padding: calc(var(--sp) * 3) var(--sp);
+        display: flex;
+        flex-direction: column;
+        padding: calc(var(--sp) * 1) var(--sp) calc(var(--sp) * 2.5);
+    }
+
+    /* Short pages sit in the optical centre instead of clinging to the header */
+    main > :first-child { margin-top: auto; }
+    main > :last-child  { margin-bottom: auto; }
+
+    /* Auto cross-axis margins would stop flex items from filling the width,
+       so centre them explicitly and let them stretch to their max-width */
+    main > :first-child,
+    main > :last-child {
+        margin-left: 0;
+        margin-right: 0;
+        align-self: center;
+        width: 100%;
+    }
+
+    .about-content,
+    .intro-text {
+        align-self: center;
+    }
+
+    .home-main {
+        padding: calc(var(--sp) * 1.5) var(--sp) calc(var(--sp) * 2.5);
+    }
+
+    .home-inner {
+        gap: calc(var(--sp) * 3.5);
+    }
+
+    .home-hero {
+        max-width: clamp(480px, 40vw, 660px);
     }
 
     .project-grid {
